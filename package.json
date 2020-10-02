@@ -6,28 +6,29 @@
   "license": "MIT",
   "scripts": {
     "test": "nyc ava",
-    "start": "./cli.js examples/basic.js",
-    "start:sc": "./cli.js examples/styled-components.js",
-    "start:fetch": "./cli.js examples/fetch.js"
+    "start": "node ./cli.js examples/basic.js",
+    "start:sc": "node ./cli.js examples/styled-components.js",
+    "start:fetch": "node ./cli.js examples/fetch.js"
   },
   "main": "index.js",
   "bin": {
     "static-react": "./cli.js"
   },
   "dependencies": {
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "meow": "^5.0.0",
-    "pkg-conf": "^2.1.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "update-notifier": "^2.5.0"
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-stage-0": "^7.8.3",
+    "@babel/register": "^7.11.5",
+    "meow": "^7.1.1",
+    "pkg-conf": "^3.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "update-notifier": "^5.0.0"
   },
   "devDependencies": {
-    "ava": "^0.19.1",
+    "ava": "^3.13.0",
     "is-html": "^1.0.0",
     "nyc": "^12.0.2",
     "rebass": "^2.0.0-6",

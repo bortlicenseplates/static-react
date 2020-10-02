@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 require('babel-register')({
   presets: [
-    'babel-preset-env',
-    'babel-preset-stage-0',
-    'babel-preset-react'
+    '@babel/preset-env',
+    '@babel/preset-stage-0',
+    '@babel/preset-react'
   ].map(require.resolve),
   plugins: [
-    'babel-plugin-transform-runtime'
+    '@babel/plugin-transform-runtime'
   ].map(require.resolve)
 })
 const fs = require('fs')

@@ -1,4 +1,6 @@
 
+# Forked from [https://github.com/jxnblk/static-react](https://github.com/jxnblk/static-react)
+
 # static-react
 
 Zero-configuration CLI React static renderer
